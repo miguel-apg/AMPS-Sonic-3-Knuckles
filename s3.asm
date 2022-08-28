@@ -76687,7 +76687,7 @@ loc_403FE:
 loc_404AC:
 		move.l	(a1)+,(a2)+
 		dbf	d6,loc_404AC
-		music	mus_Credits3
+		music	mus_CreditsP
 		move.w	#$B4,(_unkFA82).w
 		move.b	#$18,(V_int_routine).w
 		jsr	(Wait_VSync).l
@@ -80056,7 +80056,7 @@ loc_44C36:
 		move.l	#word_4578B,$30(a0)
 		music	mus_FadeOut
 		move.w	#$78,$2E(a0)
-		move.b	#mus_Knuckles,$26(a0)
+		move.b	#mus_KnucklesP,$26(a0)
 		move.w	(Camera_min_Y_pos).w,(Target_camera_min_Y_pos).w
 		move.w	(Camera_target_max_Y_pos).w,(Target_camera_max_Y_pos).w
 		move.w	(Camera_min_X_pos).w,(Target_camera_min_X_pos).w
@@ -80951,7 +80951,7 @@ sub_456C6:
 		jsr	(Create_New_Sprite).l
 		bne.s	locret_456DA
 		move.l	#Obj_Song_Fade_Transition,(a1)
-		move.b	#mus_Knuckles,$2C(a1)
+		move.b	#mus_KnucklesP,$2C(a1)
 
 locret_456DA:
 		rts
